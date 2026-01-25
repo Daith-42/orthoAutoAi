@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="hero_title">OrthoAutoAI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="AI-Powered Spelling & Grammar Correction for Windows">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">OrthoAutoAI</a>
+            <ul class="nav-links">
+                <li><a href="#features" data-i18n="nav_features">Features</a></li>
+                <li><a href="#how" data-i18n="nav_how">How it Works</a></li>
+                <li><a href="#support" data-i18n="nav_support">Support</a></li>
+            </ul>
+            <div class="nav-right" style="display: flex; align-items: center; gap: 1rem;">
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+                    ☀️
+                </button>
+                <select id="langSelect">
+                    <option value="EN">English</option>
+                    <option value="FR">Français</option>
+                    <option value="ES">Español</option>
+                    <option value="DE">Deutsch</option>
+                    <option value="IT">Italiano</option>
+                    <option value="PT">Português</option>
+                    <option value="RO">Română</option>
+                </select>
+                <a href="https://github.com/Daith_42/OrthoAutoAI/releases" class="cta-button"
+                    style="padding: 0.5rem 1rem; font-size: 0.9rem;" data-i18n="nav_download">Download</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 data-i18n="hero_title">OrthoAutoAI</h1>
+            <p data-i18n="hero_subtitle">AI-Powered Spelling & Grammar Correction for Windows</p>
+            <p data-i18n="hero_desc" style="font-size: 1.1rem; color: #8b949e;">Correct functionality in any application
+                with a simple hotkey. Powered by Google Gemini.</p>
+            <a href="https://github.com/Daith_42/OrthoAutoAI/releases" class="cta-button" data-i18n="hero_cta">Download
+                Now</a>
+        </section>
+
+        <section id="features">
+            <h2 data-i18n="desc_title">Why OrthoAutoAI?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3 data-i18n="feat_1_title">Universal Correction</h3>
+                    <p data-i18n="feat_1_desc">Works in Notepad, Word, Browser, Discord, everywhere.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-i18n="feat_2_title">Advanced AI</h3>
+                    <p data-i18n="feat_2_desc">Uses Google Gemini 2.5 Flash for high accuracy and context understanding.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-i18n="feat_3_title">Customizable</h3>
+                    <p data-i18n="feat_3_desc">Multi-language support, custom hotkeys, and history tracking.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how">
+            <h2 data-i18n="how_title">How it Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <strong>1.</strong> <span data-i18n="step_1">Select the text you want to correct.</span>
+                </div>
+                <div class="step">
+                    <strong>2.</strong> <span data-i18n="step_2">Press the hotkey (Default: Alt + C).</span>
+                </div>
+                <div class="step">
+                    <strong>3.</strong> <span data-i18n="step_3">Watch the AI magically replace it with the corrected
+                        version.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="support" class="support">
+            <h2 data-i18n="support_title">Support & Feedback</h2>
+            <p data-i18n="support_text">Found a bug? Have a feature request? Open a ticket on our GitHub.</p>
+            <a href="https://github.com/Daith_42/OrthoAutoAI/issues" class="secondary-button"
+                data-i18n="btn_ticket">Open Ticket</a>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="credits">Created by Daith_42 | January 2026</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem;" data-i18n="footer_disclaimer">Not affiliated with Google.
+            Requires your own Gemini API Key (Free).</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
