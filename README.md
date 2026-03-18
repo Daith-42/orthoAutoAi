@@ -2,6 +2,9 @@
 
 **OrthoAutoAI** is a powerful, lightweight, AI-driven spelling and grammar corrector for Windows. Built with AutoHotkey and powered by Google's Gemini 2.5 Flash model, it works universally across all applications—Notepad, Word, Discord, Browsers, and more.
 
+## Link to the website
+[orthoAutoAi.com](https://daith-42.github.io/orthoAutoAi/)
+
 ## ✨ Features
 
 - **Universal Correction**: Select text anywhere, press a hotkey (Default: `Alt + C`), and watch it get fixed instantly.
