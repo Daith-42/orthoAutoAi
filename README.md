@@ -1,14 +1,17 @@
 # OrthoAutoAI
 
-**OrthoAutoAI** is a powerful, lightweight, AI-driven spelling and grammar corrector for Windows. Built with AutoHotkey and powered by Google's Gemini 2.5 Flash model, it works universally across all applications—Notepad, Word, Discord, Browsers, and more.
+**OrthoAutoAI** is a powerful, lightweight, AI-driven spelling and grammar corrector for Windows. Built with AutoHotkey and powered by Google's Gemini 3.5 Flash-Lite model, it works universally across all applications—Notepad, Word, Discord, Browsers, and more.
 
-## Link to the website
-[orthoAutoAi.com](https://daith-42.github.io/orthoAutoAi/)
+**Website**: [daith-42.github.io/orthoAutoAi](https://daith-42.github.io/orthoAutoAi/)
+
+> 🐧 **Linux version**: a community port (Python + GTK4, Wayland/Hyprland, X11) by
+> [Kiliotsu](https://github.com/AbelQ11) is available at
+> [AbelQ11/orthoAutoAi-linux](https://github.com/AbelQ11/orthoAutoAi-linux).
 
 ## ✨ Features
 
 - **Universal Correction**: Select text anywhere, press a hotkey (Default: `Alt + C`), and watch it get fixed instantly.
-- **AI-Powered**: Uses Google Gemini 2.5 Flash for context-aware corrections and high accuracy.
+- **AI-Powered**: Uses Google Gemini 3.5 Flash-Lite for context-aware corrections and high accuracy.
 - **Multi-Language Support**: Fully localized in **7 languages**: English, French, Spanish, German, Italian, Portuguese, and Romanian.
 - **History Tracking**: Keeps a log of your last 5 corrections in a dedicated tab.
 - **Manual Confirmation**: Optional mode to review changes before applying them (`IsConfirmEnabled`).
@@ -51,14 +54,14 @@
 
 ## 🌐 Website
 
-The project includes a static website in the `docs/` folder, featuring:
--   Modern Dark/Light theme.
--   Multi-language support (EN, FR, ES, DE, IT, PT, RO).
--   Download links and documentation.
+The showcase website lives in the [`site/`](site/) folder, separate from the app. It is a static page
+generated in 7 languages (EN, FR, ES, DE, IT, PT, RO) and deployed to GitHub Pages by GitHub Actions on
+every push to `main`. See [`site/README.md`](site/README.md) to work on it.
 
 ## 👤 Credits
 
 **Created by**: Daith_42
+**Linux port**: [Kiliotsu](https://github.com/AbelQ11)
 **Date**: January 2026
 **Powered by**: Google Gemini AI
 

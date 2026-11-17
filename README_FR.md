@@ -1,11 +1,17 @@
 # OrthoAutoAI
 
-**OrthoAutoAI** est un correcteur orthographique et grammatical puissant et léger pour Windows, piloté par l'IA. Développé avec AutoHotkey et propulsé par le modèle Gemini 2.5 Flash de Google, il fonctionne universellement dans toutes les applications : Bloc-notes, Word, Discord, Navigateurs, et bien plus.
+**OrthoAutoAI** est un correcteur orthographique et grammatical puissant et léger pour Windows, piloté par l'IA. Développé avec AutoHotkey et propulsé par le modèle Gemini 3.5 Flash-Lite de Google, il fonctionne universellement dans toutes les applications : Bloc-notes, Word, Discord, Navigateurs, et bien plus.
+
+**Site web** : [daith-42.github.io/orthoAutoAi/fr/](https://daith-42.github.io/orthoAutoAi/fr/)
+
+> 🐧 **Version Linux** : un portage communautaire (Python + GTK4, Wayland/Hyprland, X11) réalisé par
+> [Kiliotsu](https://github.com/AbelQ11) est disponible sur
+> [AbelQ11/orthoAutoAi-linux](https://github.com/AbelQ11/orthoAutoAi-linux).
 
 ## ✨ Fonctionnalités
 
 - **Correction Universelle** : Sélectionnez du texte n'importe où, appuyez sur un raccourci (Défaut : `Alt + C`), et regardez-le se corriger instantanément.
-- **Propulsé par l'IA** : Utilise Google Gemini 2.5 Flash pour des corrections contextuelles et une grande précision.
+- **Propulsé par l'IA** : Utilise Google Gemini 3.5 Flash-Lite pour des corrections contextuelles et une grande précision.
 - **Support Multi-langues** : Entièrement traduit en **7 langues** : Anglais, Français, Espagnol, Allemand, Italien, Portugais et Roumain.
 - **Historique** : Garde une trace de vos 5 dernières corrections dans un onglet dédié.
 - **Confirmation Manuelle** : Mode optionnel pour valider les changements avant application.
@@ -48,14 +54,14 @@
 
 ## 🌐 Site Web
 
-Le projet inclut un site web statique dans le dossier `docs/`, avec :
--   Thème Moderne Sombre/Clair.
--   Support multi-langues (EN, FR, ES, DE, IT, PT, RO).
--   Liens de téléchargement et documentation.
+Le site vitrine se trouve dans le dossier [`site/`](site/), séparé de l'application. C'est une page
+statique générée en 7 langues (EN, FR, ES, DE, IT, PT, RO), déployée sur GitHub Pages par GitHub Actions
+à chaque push sur `main`. Voir [`site/README.md`](site/README.md) pour travailler dessus.
 
 ## 👤 Crédits
 
 **Créé par** : Daith_42
+**Version Linux** : [Kiliotsu](https://github.com/AbelQ11)
 **Date** : Janvier 2026
 **Propulsé par** : Google Gemini AI
 
