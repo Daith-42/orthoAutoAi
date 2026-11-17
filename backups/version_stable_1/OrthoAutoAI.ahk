@@ -1,4 +1,4 @@
-; OrthoAutoAI v7.3
+; OrthoAutoAI v7.4
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
@@ -50,7 +50,7 @@ global Translations := Map(
         "HelpLink", "Link",
         "Success", "Success",
         "ShortcutCreated", "Shortcut created on Desktop:",
-        "CreditsContent", "OrthoAutoAI v7.3`n`nCreated by: Daith_42`nDate: January 2026`n`nPowered by Google Gemini AI",
+        "CreditsContent", "OrthoAutoAI v7.4`n`nCreated by: Daith_42`nDate: January 2026`n`nPowered by Google Gemini AI",
         "VisitWebsite", "Visit Website",
         "ConfirmTitle", "Confirm Correction",
         "BtnApply", "Apply",
@@ -94,7 +94,7 @@ global Translations := Map(
         "HelpLink", "Lien",
         "Success", "Succès",
         "ShortcutCreated", "Raccourci créé sur le bureau logicel :",
-        "CreditsContent", "OrthoAutoAI v7.3`n`nCréé par : Daith_42`nDate : Janvier 2026`n`nPropulsé par Google Gemini AI",
+        "CreditsContent", "OrthoAutoAI v7.4`n`nCréé par : Daith_42`nDate : Janvier 2026`n`nPropulsé par Google Gemini AI",
         "VisitWebsite", "Visiter le site Web",
         "ConfirmTitle", "Confirmer la correction",
         "BtnApply", "Appliquer",
@@ -138,7 +138,7 @@ global Translations := Map(
         "HelpLink", "Enlace",
         "Success", "Éxito",
         "ShortcutCreated", "Acceso directo creado en el Escritorio:",
-        "CreditsContent", "OrthoAutoAI v7.3`n`nCreado por: Daith_42`nFecha: Enero 2026`n`nImpulsado por Google Gemini AI",
+        "CreditsContent", "OrthoAutoAI v7.4`n`nCreado por: Daith_42`nFecha: Enero 2026`n`nImpulsado por Google Gemini AI",
         "VisitWebsite", "Visitar sitio web",
         "ConfirmTitle", "Confirmar corrección",
         "BtnApply", "Aplicar",
@@ -182,7 +182,7 @@ global Translations := Map(
         "HelpLink", "Link",
         "Success", "Erfolg",
         "ShortcutCreated", "Verknüpfung auf dem Desktop erstellt:",
-        "CreditsContent", "OrthoAutoAI v7.3`n`nErstellt von: Daith_42`nDatum: Januar 2026`n`nUnterstützt von Google Gemini AI",
+        "CreditsContent", "OrthoAutoAI v7.4`n`nErstellt von: Daith_42`nDatum: Januar 2026`n`nUnterstützt von Google Gemini AI",
         "VisitWebsite", "Website besuchen",
         "ConfirmTitle", "Korrektur bestätigen",
         "BtnApply", "Anwenden",
@@ -226,7 +226,7 @@ global Translations := Map(
         "HelpLink", "Link",
         "Success", "Successo",
         "ShortcutCreated", "Collegamento creato sul Desktop:",
-        "CreditsContent", "OrthoAutoAI v7.3`n`nCreato da: Daith_42`nData: Gennaio 2026`n`nPowered by Google Gemini AI",
+        "CreditsContent", "OrthoAutoAI v7.4`n`nCreato da: Daith_42`nData: Gennaio 2026`n`nPowered by Google Gemini AI",
         "VisitWebsite", "Visita il sito web",
         "ConfirmTitle", "Conferma correzione",
         "BtnApply", "Applica",
@@ -270,7 +270,7 @@ global Translations := Map(
         "HelpLink", "Link",
         "Success", "Sucesso",
         "ShortcutCreated", "Atalho criado na Área de Trabalho:",
-        "CreditsContent", "OrthoAutoAI v7.3`n`nCriado por: Daith_42`nData: Janeiro 2026`n`nPowered by Google Gemini AI",
+        "CreditsContent", "OrthoAutoAI v7.4`n`nCriado por: Daith_42`nData: Janeiro 2026`n`nPowered by Google Gemini AI",
         "VisitWebsite", "Visitar site",
         "ConfirmTitle", "Confirmar correção",
         "BtnApply", "Aplicar",
@@ -314,7 +314,7 @@ global Translations := Map(
         "HelpLink", "Link",
         "Success", "Succes",
         "ShortcutCreated", "Scurtătură creată pe Desktop:",
-        "CreditsContent", "OrthoAutoAI v7.3`n`nCreat de: Daith_42`nData: Ianuarie 2026`n`nPowered by Google Gemini AI",
+        "CreditsContent", "OrthoAutoAI v7.4`n`nCreat de: Daith_42`nData: Ianuarie 2026`n`nPowered by Google Gemini AI",
         "VisitWebsite", "Vizitează site-ul",
         "ConfirmTitle", "Confirmă corecția",
         "BtnApply", "Aplică",
@@ -382,7 +382,7 @@ ActionIA(HotkeyName) {
     CleanText := StrReplace(StrReplace(A_Clipboard, '"', '\"'), '`n', '\n')
     Payload := '{ "contents": [{ "parts": [{ "text": "' . SystemPrompt . CleanText . '" }] }] }'
     
-    URL := "https://generativelanguage.googleapis.com/v1/models/" . MODEL . ":generateContent?key=" . API_KEY
+    URL := "https://generativelanguage.googleapis.com/v1beta/models/" . MODEL . ":generateContent?key=" . API_KEY
     
     try {
         Http := ComObject("WinHttp.WinHttpRequest.5.1")
@@ -536,7 +536,7 @@ ShowGui(*) {
     Tabs.UseTab(3)
     MyGui.SetFont("s10", "Segoe UI")
     MyGui.Add("Text", "x20 y+20 w320 Center", GetText("CreditsContent"))
-    MyGui.Add("Link", "x20 y+15 w320 Center", '<a href="https://www.orthoautoai.com">' . GetText("VisitWebsite") . '</a>')
+    MyGui.Add("Link", "x20 y+15 w320 Center", '<a href="https://daith-42.github.io/orthoAutoAi/">' . GetText("VisitWebsite") . '</a>')
     MyGui.SetFont("s10", "Segoe UI") ; Reset font if needed
 
     ; --- FOOTER (OUTSIDE TABS) ---
@@ -708,7 +708,8 @@ GetCodeFromLang(Name) {
 
 LoadSettings() {
     global API_KEY := IniRead(IniFile, "Settings", "ApiKey", "")
-    global MODEL := IniRead(IniFile, "Settings", "Model", "gemini-2.5-flash")
+    ; gemini-2.5-flash est déprécié par Google (arrêt le 1er décembre 2026).
+    global MODEL := IniRead(IniFile, "Settings", "Model", "gemini-3.5-flash-lite")
     global MainHotkey := IniRead(IniFile, "Settings", "MainHotkey", "!c")
     global SettingsHotkey := IniRead(IniFile, "Settings", "SettingsHotkey", "!w")
     global IsSoundEnabled := IniRead(IniFile, "Settings", "IsSoundEnabled", 0)
